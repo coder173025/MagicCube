@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quantize>
+    <!-- 登录方式 -->
+    <element name="loginMethod">
+        <mappingItem defaultName="账号、密码登录" fullName="账号、密码登录" simpleName="账号、密码登录" value="1" />
+        <mappingItem defaultName="账号、验证码登录" fullName="账号、验证码登录" simpleName="账号、验证码登录" value="2" />
+        <mappingItem defaultName="自动登录" fullName="自动登录" simpleName="自动登录" value="3" />
+    </element>
+    <!-- 帐号状态 -->
+    <element name="accountStatus">
+        <mappingItem defaultName="帐号关闭" fullName="帐号关闭" simpleName="帐号关闭" value="-1" />
+        <mappingItem defaultName="帐号正常" fullName="帐号正常" simpleName="帐号正常" value="1" />
+        <mappingItem defaultName="B身份冻结" fullName="B身份冻结" simpleName="B身份冻结" value="-2" />
+        <mappingItem defaultName="C身份冻结" fullName="C身份冻结" simpleName="C身份冻结" value="-3" />
+        <mappingItem defaultName="B、C身份冻结" fullName="B、C身份冻结" simpleName="B、C身份冻结" value="-4" />
+    </element>
+    <!-- 注册身份 -->
+    <element name="regIdentity">
+        <mappingItem defaultName="求职者" fullName="求职者" simpleName="求职者" value="1" />
+        <mappingItem defaultName="招聘者" fullName="招聘者" simpleName="招聘者" value="2" />
+    </element>
+    <!-- 帐号注册平台 -->
+    <element name="regPlatform">
+        <mappingItem defaultName="CRM后台" fullName="CRM后台" simpleName="CRM后台" value="1001" />
+        <mappingItem defaultName="综合管理后台" fullName="综合管理后台" simpleName="综合管理后台" value="1002" />
+        <mappingItem defaultName="web" fullName="web" simpleName="web" value="1101" />
+        <mappingItem defaultName="xiaopin" fullName="xiaopin" simpleName="xiaopin" value="1102" />
+        <mappingItem defaultName="ios" fullName="ios" simpleName="ios" value="1201" />
+        <mappingItem defaultName="android" fullName="android" simpleName="android" value="1202" />
+        <mappingItem defaultName="h5" fullName="h5" simpleName="h5" value="1203" />
+    </element>
+    <!-- 求职者注册平台 -->
+    <element name="jhRegPlatform">
+        <mappingItem defaultName="CRM后台" fullName="CRM后台" simpleName="CRM后台" value="1001" />
+        <mappingItem defaultName="综合管理后台" fullName="综合管理后台" simpleName="综合管理后台" value="1002" />
+        <mappingItem defaultName="web" fullName="web" simpleName="web" value="1101" />
+        <mappingItem defaultName="xiaopin" fullName="xiaopin" simpleName="xiaopin" value="1102" />
+        <mappingItem defaultName="ios" fullName="ios" simpleName="ios" value="1201" />
+        <mappingItem defaultName="android" fullName="android" simpleName="android" value="1202" />
+        <mappingItem defaultName="h5" fullName="h5" simpleName="h5" value="1203" />
+    </element>
+    <!-- 招聘者注册平台 -->
+    <element name="jhRegPlatform">
+        <mappingItem defaultName="CRM后台" fullName="CRM后台" simpleName="CRM后台" value="1001" />
+        <mappingItem defaultName="综合管理后台" fullName="综合管理后台" simpleName="综合管理后台" value="1002" />
+        <mappingItem defaultName="web" fullName="web" simpleName="web" value="1101" />
+        <mappingItem defaultName="xiaopin" fullName="xiaopin" simpleName="xiaopin" value="1102" />
+        <mappingItem defaultName="ios" fullName="ios" simpleName="ios" value="1201" />
+        <mappingItem defaultName="android" fullName="android" simpleName="android" value="1202" />
+        <mappingItem defaultName="h5" fullName="h5" simpleName="h5" value="1203" />
+    </element>
+    <!-- 帐号最后登录身份 -->
+    <element name="lastLoginIdentity">
+        <mappingItem defaultName="求职者" fullName="求职者" simpleName="求职者" value="1" />
+        <mappingItem defaultName="招聘者" fullName="招聘者" simpleName="招聘者" value="2" />
+    </element>
+    <!-- 帐号最后登录平台 -->
+    <element name="lastLoginPlatform">
+        <mappingItem defaultName="CRM后台" fullName="CRM后台" simpleName="CRM后台" value="1001" />
+        <mappingItem defaultName="综合管理后台" fullName="综合管理后台" simpleName="综合管理后台" value="1002" />
+        <mappingItem defaultName="web" fullName="web" simpleName="web" value="1101" />
+        <mappingItem defaultName="xiaopin" fullName="xiaopin" simpleName="xiaopin" value="1102" />
+        <mappingItem defaultName="ios" fullName="ios" simpleName="ios" value="1201" />
+        <mappingItem defaultName="android" fullName="android" simpleName="android" value="1202" />
+        <mappingItem defaultName="h5" fullName="h5" simpleName="h5" value="1203" />
+    </element>
+    <!-- 帐号最后登录方式 -->
+    <element name="lastLoginMethod">
+        <mappingItem defaultName="账号、密码登录" fullName="账号、密码登录" simpleName="账号、密码登录" value="1" />
+        <mappingItem defaultName="账号、验证码登录" fullName="账号、验证码登录" simpleName="账号、验证码登录" value="2" />
+        <mappingItem defaultName="自动登录" fullName="自动登录" simpleName="自动登录" value="3" />
+    </element>
+    <!-- 求职者最后登录身份 -->
+    <element name="jhLastLoginIdentity">
+        <mappingItem defaultName="求职者" fullName="求职者" simpleName="求职者" value="1" />
+        <mappingItem defaultName="招聘者" fullName="招聘者" simpleName="招聘者" value="2" />
+    </element>
+    <!-- 求职者最后登录平台 -->
+    <element name="jhLastLoginPlatform">
+        <mappingItem defaultName="CRM后台" fullName="CRM后台" simpleName="CRM后台" value="1001" />
+        <mappingItem defaultName="综合管理后台" fullName="综合管理后台" simpleName="综合管理后台" value="1002" />
+        <mappingItem defaultName="web" fullName="web" simpleName="web" value="1101" />
+        <mappingItem defaultName="xiaopin" fullName="xiaopin" simpleName="xiaopin" value="1102" />
+        <mappingItem defaultName="ios" fullName="ios" simpleName="ios" value="1201" />
+        <mappingItem defaultName="android" fullName="android" simpleName="android" value="1202" />
+        <mappingItem defaultName="h5" fullName="h5" simpleName="h5" value="1203" />
+    </element>
+    <!-- 求职者最后登录方式 -->
+    <element name="jhLastLoginMethod">
+        <mappingItem defaultName="账号、密码登录" fullName="账号、密码登录" simpleName="账号、密码登录" value="1" />
+        <mappingItem defaultName="账号、验证码登录" fullName="账号、验证码登录" simpleName="账号、验证码登录" value="2" />
+        <mappingItem defaultName="自动登录" fullName="自动登录" simpleName="自动登录" value="3" />
+    </element>
+    <!-- 招聘者最后登录身份 -->
+    <element name="hrLastLoginIdentity">
+        <mappingItem defaultName="求职者" fullName="求职者" simpleName="求职者" value="1" />
+        <mappingItem defaultName="招聘者" fullName="招聘者" simpleName="招聘者" value="2" />
+    </element>
+    <!-- 招聘者最后登录平台 -->
+    <element name="hrLastLoginPlatform">
+        <mappingItem defaultName="CRM后台" fullName="CRM后台" simpleName="CRM后台" value="1001" />
+        <mappingItem defaultName="综合管理后台" fullName="综合管理后台" simpleName="综合管理后台" value="1002" />
+        <mappingItem defaultName="web" fullName="web" simpleName="web" value="1101" />
+        <mappingItem defaultName="xiaopin" fullName="xiaopin" simpleName="xiaopin" value="1102" />
+        <mappingItem defaultName="ios" fullName="ios" simpleName="ios" value="1201" />
+        <mappingItem defaultName="android" fullName="android" simpleName="android" value="1202" />
+        <mappingItem defaultName="h5" fullName="h5" simpleName="h5" value="1203" />
+    </element>
+    <!-- 招聘者最后登录方式 -->
+    <element name="hrLastLoginMethod">
+        <mappingItem defaultName="账号、密码登录" fullName="账号、密码登录" simpleName="账号、密码登录" value="1" />
+        <mappingItem defaultName="账号、验证码登录" fullName="账号、验证码登录" simpleName="账号、验证码登录" value="2" />
+        <mappingItem defaultName="自动登录" fullName="自动登录" simpleName="自动登录" value="3" />
+    </element>
+    <!-- 性别 -->
+    <element name="gender">
+        <mappingItem defaultName="她" fullName="她" simpleName="她" value="0" />
+        <mappingItem defaultName="他" fullName="他" simpleName="他" value="1" />
+    </element>
+    <!-- 婚姻状态 -->
+    <element name="marriage">
+        <mappingItem defaultName="未婚" fullName="未婚" simpleName="未婚" value="1" />
+        <mappingItem defaultName="离异" fullName="离异" simpleName="离异" value="2" />
+        <mappingItem defaultName="丧偶" fullName="丧偶" simpleName="丧偶" value="3" />
+        <mappingItem defaultName="已婚" fullName="已婚" simpleName="已婚" value="4" />
+    </element>
+    <!-- 招聘者身份状态 -->
+    <element name="hrIdentityStatus">
+        <mappingItem defaultName="无" fullName="无" simpleName="无" value="-1" />
+        <mappingItem defaultName="0.5用户" fullName="0.5用户" simpleName="0.5用户" value="1" />
+        <mappingItem defaultName="魔方用户" fullName="魔方用户" simpleName="魔方用户" value="2" />
+    </element>
+    <!-- 求职者身份状态 -->
+    <element name="jhIdentityStatus">
+        <mappingItem defaultName="无" fullName="无" simpleName="无" value="-1" />
+        <mappingItem defaultName="0.5用户" fullName="0.5用户" simpleName="0.5用户" value="1" />
+        <mappingItem defaultName="魔方用户" fullName="魔方用户" simpleName="魔方用户" value="2" />
+    </element>
+    <!-- HR认证状态 -->
+    <element name="isHRAuth">
+        <mappingItem defaultName="否" fullName="否" simpleName="否" value="0" />
+        <mappingItem defaultName="是" fullName="是" simpleName="是" value="1" />
+    </element>
+    <!-- 学历 -->
+    <element name="education">
+        <mappingItem defaultName="初中" fullName="初中" simpleName="初中" value="1" />
+        <mappingItem defaultName="中专/职高/技校" fullName="中专/职高/技校" simpleName="中专/职高/技校" value="2" />
+        <mappingItem defaultName="高中" fullName="高中" simpleName="高中" value="3" />
+        <mappingItem defaultName="大专" fullName="大专" simpleName="大专" value="4" />
+        <mappingItem defaultName="本科" fullName="本科" simpleName="本科" value="5" />
+        <mappingItem defaultName="硕士" fullName="硕士" simpleName="硕士" value="6" />
+        <mappingItem defaultName="博士" fullName="博士" simpleName="博士" value="7" />
+    </element>
+    <!-- 是否隐藏简历 -->
+    <element name="allowHideResume">
+        <mappingItem defaultName="否" fullName="否" simpleName="否" value="0" />
+        <mappingItem defaultName="是" fullName="是" simpleName="是" value="1" />
+    </element>
+    <!-- 同意推送职位 -->
+    <element name="allowPushJob">
+        <mappingItem defaultName="否" fullName="否" simpleName="否" value="0" />
+        <mappingItem defaultName="是" fullName="是" simpleName="是" value="1" />
+    </element>
+    <!-- 是否允许查询 -->
+    <element name="allowSearch">
+        <mappingItem defaultName="否" fullName="否" simpleName="否" value="0" />
+        <mappingItem defaultName="是" fullName="是" simpleName="是" value="1" />
+    </element>
+    <!-- 短信通知设置 -->
+    <element name="allowSMSNotify">
+        <mappingItem defaultName="否" fullName="否" simpleName="否" value="0" />
+        <mappingItem defaultName="是" fullName="是" simpleName="是" value="1" />
+    </element>
+    <!-- 微信通知设置 -->
+    <element name="allowWechatNotify">
+        <mappingItem defaultName="否" fullName="否" simpleName="否" value="0" />
+        <mappingItem defaultName="是" fullName="是" simpleName="是" value="1" />
+    </element>
+    <!-- 求职状态 -->
+    <element name="status">
+        <mappingItem defaultName="目前正在找工作" fullName="目前正在找工作" simpleName="目前正在找工作" value="1" />
+        <mappingItem defaultName="在职，正考虑换工作" fullName="在职，正考虑换工作" simpleName="在职，正考虑换工作"
+            value="2" />
+        <mappingItem defaultName="在职，只考虑更好的机会" fullName="在职，只考虑更好的机会" simpleName="在职，只考虑更好的机会"
+            value="3" />
+        <mappingItem defaultName="在职，暂无跳槽打算" fullName="在职，暂无跳槽打算" simpleName="在职，暂无跳槽打算"
+            value="4" />
+    </element>
+    <!-- 求职类型 -->
+    <element name="exptType">
+        <mappingItem defaultName="全职" fullName="全职" simpleName="全职" value="1" />
+        <mappingItem defaultName="兼职" fullName="兼职" simpleName="兼职" value="2" />
+        <mappingItem defaultName="实习" fullName="实习" simpleName="实习" value="3" />
+    </element>
+    <!-- 期望行业 -->
+    <element name="exptIndustry">
+        <mappingItem defaultName="互联网" fullName="互联网" simpleName="互联网" value="1" />
+        <mappingItem defaultName="IT/软件" fullName="IT/软件" simpleName="IT/软件" value="2" />
+        <mappingItem defaultName="电子" fullName="电子" simpleName="电子" value="3" />
+        <mappingItem defaultName="硬件" fullName="硬件" simpleName="硬件" value="4" />
+        <mappingItem defaultName="通信" fullName="通信" simpleName="通信" value="5" />
+        <mappingItem defaultName="游戏" fullName="游戏" simpleName="游戏" value="6" />
+        <mappingItem defaultName="金融" fullName="金融" simpleName="金融" value="7" />
+        <mappingItem defaultName="房地产/建筑" fullName="房地产/建筑" simpleName="房地产/建筑" value="8" />
+        <mappingItem defaultName="咨询/翻译/法律" fullName="咨询/翻译/法律" simpleName="咨询/翻译/法律" value="9" />
+        <mappingItem defaultName="人力资源/招聘" fullName="人力资源/招聘" simpleName="人力资源/招聘" value="10" />
+        <mappingItem defaultName="广告/公关/会展" fullName="广告/公关/会展" simpleName="广告/公关/会展" value="11" />
+        <mappingItem defaultName="专业服务（中介/检测/认证/外包）" fullName="专业服务（中介/检测/认证/外包）"
+            simpleName="专业服务（中介/检测/认证/外包）" value="12" />
+        <mappingItem defaultName="快消/耐消" fullName="快消/耐消" simpleName="快消/耐消" value="13" />
+        <mappingItem defaultName="贸易/进出口" fullName="贸易/进出口" simpleName="贸易/进出口" value="14" />
+        <mappingItem defaultName="零售/批发/租赁" fullName="零售/批发/租赁" simpleName="零售/批发/租赁" value="15" />
+        <mappingItem defaultName="教育/培训/院校" fullName="教育/培训/院校" simpleName="教育/培训/院校" value="16" />
+        <mappingItem defaultName="汽车/摩托车" fullName="汽车/摩托车" simpleName="汽车/摩托车" value="17" />
+        <mappingItem defaultName="生产/加工/制造" fullName="生产/加工/制造" simpleName="生产/加工/制造" value="18" />
+        <mappingItem defaultName="医疗/健康" fullName="医疗/健康" simpleName="医疗/健康" value="19" />
+        <mappingItem defaultName="供应链/物流" fullName="供应链/物流" simpleName="供应链/物流" value="20" />
+        <mappingItem defaultName="服务业" fullName="服务业" simpleName="服务业" value="21" />
+        <mappingItem defaultName="旅游/度假" fullName="旅游/度假" simpleName="旅游/度假" value="22" />
+        <mappingItem defaultName="媒体/传媒" fullName="媒体/传媒" simpleName="媒体/传媒" value="23" />
+        <mappingItem defaultName="文化/体育/娱乐" fullName="文化/体育/娱乐" simpleName="文化/体育/娱乐" value="24" />
+        <mappingItem defaultName="能源/矿产/环保" fullName="能源/矿产/环保" simpleName="能源/矿产/环保" value="25" />
+        <mappingItem defaultName="政府/非盈利机构" fullName="政府/非盈利机构" simpleName="政府/非盈利机构" value="26" />
+        <mappingItem defaultName="O2O" fullName="O2O" simpleName="O2O" value="27" />
+        <mappingItem defaultName="其它" fullName="其它" simpleName="其它" value="28" />
+    </element>
+    <!-- 公司行业 -->
+    <element name="industry">
+        <mappingItem defaultName="互联网" fullName="互联网" simpleName="互联网" value="1" />
+        <mappingItem defaultName="IT/软件" fullName="IT/软件" simpleName="IT/软件" value="2" />
+        <mappingItem defaultName="电子" fullName="电子" simpleName="电子" value="3" />
+        <mappingItem defaultName="硬件" fullName="硬件" simpleName="硬件" value="4" />
+        <mappingItem defaultName="通信" fullName="通信" simpleName="通信" value="5" />
+        <mappingItem defaultName="游戏" fullName="游戏" simpleName="游戏" value="6" />
+        <mappingItem defaultName="金融" fullName="金融" simpleName="金融" value="7" />
+        <mappingItem defaultName="房地产/建筑" fullName="房地产/建筑" simpleName="房地产/建筑" value="8" />
+        <mappingItem defaultName="咨询/翻译/法律" fullName="咨询/翻译/法律" simpleName="咨询/翻译/法律" value="9" />
+        <mappingItem defaultName="人力资源/招聘" fullName="人力资源/招聘" simpleName="人力资源/招聘" value="10" />
+        <mappingItem defaultName="广告/公关/会展" fullName="广告/公关/会展" simpleName="广告/公关/会展" value="11" />
+        <mappingItem defaultName="专业服务（中介/检测/认证/外包）" fullName="专业服务（中介/检测/认证/外包）"
+            simpleName="专业服务（中介/检测/认证/外包）" value="12" />
+        <mappingItem defaultName="快消/耐消" fullName="快消/耐消" simpleName="快消/耐消" value="13" />
+        <mappingItem defaultName="贸易/进出口" fullName="贸易/进出口" simpleName="贸易/进出口" value="14" />
+        <mappingItem defaultName="零售/批发/租赁" fullName="零售/批发/租赁" simpleName="零售/批发/租赁" value="15" />
+        <mappingItem defaultName="教育/培训/院校" fullName="教育/培训/院校" simpleName="教育/培训/院校" value="16" />
+        <mappingItem defaultName="汽车/摩托车" fullName="汽车/摩托车" simpleName="汽车/摩托车" value="17" />
+        <mappingItem defaultName="生产/加工/制造" fullName="生产/加工/制造" simpleName="生产/加工/制造" value="18" />
+        <mappingItem defaultName="医疗/健康" fullName="医疗/健康" simpleName="医疗/健康" value="19" />
+        <mappingItem defaultName="供应链/物流" fullName="供应链/物流" simpleName="供应链/物流" value="20" />
+        <mappingItem defaultName="服务业" fullName="服务业" simpleName="服务业" value="21" />
+        <mappingItem defaultName="旅游/度假" fullName="旅游/度假" simpleName="旅游/度假" value="22" />
+        <mappingItem defaultName="媒体/传媒" fullName="媒体/传媒" simpleName="媒体/传媒" value="23" />
+        <mappingItem defaultName="文化/体育/娱乐" fullName="文化/体育/娱乐" simpleName="文化/体育/娱乐" value="24" />
+        <mappingItem defaultName="能源/矿产/环保" fullName="能源/矿产/环保" simpleName="能源/矿产/环保" value="25" />
+        <mappingItem defaultName="政府/非盈利机构" fullName="政府/非盈利机构" simpleName="政府/非盈利机构" value="26" />
+        <mappingItem defaultName="O2O" fullName="O2O" simpleName="O2O" value="27" />
+        <mappingItem defaultName="其它" fullName="其它" simpleName="其它" value="28" />
+    </element>
+    <!-- 公司规模 -->
+    <element name="scale">
+        <mappingItem defaultName="少于50人" fullName="少于50人" simpleName="少于50人" value="1" />
+        <mappingItem defaultName="50-150人" fullName="50-150人" simpleName="50-150人" value="2" />
+        <mappingItem defaultName="150-500人" fullName="150-500人" simpleName="150-500人" value="3" />
+        <mappingItem defaultName="500-1000人" fullName="500-1000人" simpleName="500-1000人"
+            value="4" />
+        <mappingItem defaultName="1000-10000人" fullName="1000-10000人" simpleName="1000-10000人"
+            value="5" />
+        <mappingItem defaultName="10000人以上" fullName="10000人以上" simpleName="10000人以上" value="6" />
+    </element>
+    <!-- 公司性质 -->
+    <element name="charact">
+        <mappingItem defaultName="国企" fullName="国企" simpleName="国企" value="1" />
+        <mappingItem defaultName="民营" fullName="民营" simpleName="民营" value="2" />
+        <mappingItem defaultName="合资" fullName="合资" simpleName="合资" value="3" />
+        <mappingItem defaultName="外资" fullName="外资" simpleName="外资" value="4" />
+        <mappingItem defaultName="股份制企业" fullName="股份制企业" simpleName="股份制企业" value="5" />
+        <mappingItem defaultName="上市公司" fullName="上市公司" simpleName="上市公司" value="6" />
+        <mappingItem defaultName="代表处" fullName="代表处" simpleName="代表处" value="7" />
+        <mappingItem defaultName="政府机关事业单位" fullName="政府机关事业单位" simpleName="政府机关事业单位" value="8" />
+        <mappingItem defaultName="非营利机构" fullName="非营利机构" simpleName="非营利机构" value="9" />
+        <mappingItem defaultName="创业公司" fullName="创业公司" simpleName="创业公司" value="10" />
+        <mappingItem defaultName="其它" fullName="其它" simpleName="其它" value="11" />
+    </element>
+    <!-- 学历 -->
+    <element name="education">
+        <mappingItem defaultName="初中" fullName="初中" simpleName="初中" value="1" />
+        <mappingItem defaultName="中专/职高/技校" fullName="中专/职高/技校" simpleName="中专/职高/技校" value="2" />
+        <mappingItem defaultName="高中" fullName="高中" simpleName="高中" value="3" />
+        <mappingItem defaultName="大专" fullName="大专" simpleName="大专" value="4" />
+        <mappingItem defaultName="本科" fullName="本科" simpleName="本科" value="5" />
+        <mappingItem defaultName="硕士" fullName="硕士" simpleName="硕士" value="6" />
+        <mappingItem defaultName="博士" fullName="博士" simpleName="博士" value="7" />
+    </element>
+    <!-- 是否统招 -->
+    <element name="unifyEnroll">
+        <mappingItem defaultName="否" fullName="否" simpleName="否" value="0" />
+        <mappingItem defaultName="是" fullName="是" simpleName="是" value="1" />
+    </element>
+    <!-- 简历来源 -->
+    <element name="resumeSource">
+        <mappingItem defaultName="魔方招聘" fullName="魔方招聘" simpleName="魔方招聘" value="1" />
+        <mappingItem defaultName="前程无忧" fullName="前程无忧" simpleName="前程无忧" value="2" />
+        <mappingItem defaultName="智联" fullName="智联" simpleName="智联" value="3" />
+        <mappingItem defaultName="58同城" fullName="58同城" simpleName="58同城" value="4" />
+        <mappingItem defaultName="拉勾" fullName="拉勾" simpleName="拉勾" value="5" />
+        <mappingItem defaultName="中华英才" fullName="中华英才" simpleName="中华英才" value="6" />
+        <mappingItem defaultName="赶集招聘" fullName="赶集招聘" simpleName="赶集招聘" value="7" />
+        <mappingItem defaultName="Boss直聘" fullName="Boss直聘" simpleName="Boss直聘" value="8" />
+        <mappingItem defaultName="猎聘" fullName="猎聘" simpleName="猎聘" value="9" />
+    </element>
+    <!-- 工作性质 -->
+    <element name="workCharact">
+        <mappingItem defaultName="全职" fullName="全职" simpleName="全职" value="1" />
+        <mappingItem defaultName="兼职" fullName="兼职" simpleName="兼职" value="2" />
+        <mappingItem defaultName="实习" fullName="实习" simpleName="实习" value="3" />
+    </element>
+    <!-- 最低学历要求 -->
+    <element name="minDegree">
+        <mappingItem defaultName="初中" fullName="初中" simpleName="初中" value="1" />
+        <mappingItem defaultName="中专/职高/技校" fullName="中专/职高/技校" simpleName="中专/职高/技校" value="2" />
+        <mappingItem defaultName="高中" fullName="高中" simpleName="高中" value="3" />
+        <mappingItem defaultName="大专" fullName="大专" simpleName="大专" value="4" />
+        <mappingItem defaultName="本科" fullName="本科" simpleName="本科" value="5" />
+        <mappingItem defaultName="硕士" fullName="硕士" simpleName="硕士" value="6" />
+        <mappingItem defaultName="博士" fullName="博士" simpleName="博士" value="7" />
+    </element>
+    <!-- 职位类型 -->
+    <element name="type">
+        <mappingItem defaultName="现场面试" fullName="现场面试" simpleName="现场面试" value="1" />
+        <mappingItem defaultName="在线面试" fullName="在线面试" simpleName="在线面试" value="2" />
+    </element>
+    <!-- 发布状态 -->
+    <element name="status">
+        <mappingItem defaultName="未开放" fullName="未开放" simpleName="未开放" value="0" />
+        <mappingItem defaultName="开放中" fullName="开放中" simpleName="开放中" value="1" />
+        <mappingItem defaultName="已关闭" fullName="已关闭" simpleName="已关闭" value="-1" />
+    </element>
+    <!-- 职位来源 -->
+    <element name="source">
+        <mappingItem defaultName="魔方招聘" fullName="魔方招聘" simpleName="魔方招聘" value="1" />
+        <mappingItem defaultName="前程无忧" fullName="前程无忧" simpleName="前程无忧" value="2" />
+        <mappingItem defaultName="智联" fullName="智联" simpleName="智联" value="3" />
+        <mappingItem defaultName="58同城" fullName="58同城" simpleName="58同城" value="4" />
+        <mappingItem defaultName="拉勾" fullName="拉勾" simpleName="拉勾" value="5" />
+        <mappingItem defaultName="中华英才" fullName="中华英才" simpleName="中华英才" value="6" />
+        <mappingItem defaultName="赶集招聘" fullName="赶集招聘" simpleName="赶集招聘" value="7" />
+        <mappingItem defaultName="Boss直聘" fullName="Boss直聘" simpleName="Boss直聘" value="8" />
+        <mappingItem defaultName="猎聘" fullName="猎聘" simpleName="猎聘" value="9" />
+    </element>
+    <!-- 所属行业 -->
+    <element name="industry">
+        <mappingItem defaultName="互联网" fullName="互联网" simpleName="互联网" value="1" />
+        <mappingItem defaultName="IT/软件" fullName="IT/软件" simpleName="IT/软件" value="2" />
+        <mappingItem defaultName="电子" fullName="电子" simpleName="电子" value="3" />
+        <mappingItem defaultName="硬件" fullName="硬件" simpleName="硬件" value="4" />
+        <mappingItem defaultName="通信" fullName="通信" simpleName="通信" value="5" />
+        <mappingItem defaultName="游戏" fullName="游戏" simpleName="游戏" value="6" />
+        <mappingItem defaultName="金融" fullName="金融" simpleName="金融" value="7" />
+        <mappingItem defaultName="房地产/建筑" fullName="房地产/建筑" simpleName="房地产/建筑" value="8" />
+        <mappingItem defaultName="咨询/翻译/法律" fullName="咨询/翻译/法律" simpleName="咨询/翻译/法律" value="9" />
+        <mappingItem defaultName="人力资源/招聘" fullName="人力资源/招聘" simpleName="人力资源/招聘" value="10" />
+        <mappingItem defaultName="广告/公关/会展" fullName="广告/公关/会展" simpleName="广告/公关/会展" value="11" />
+        <mappingItem defaultName="专业服务（中介/检测/认证/外包）" fullName="专业服务（中介/检测/认证/外包）"
+            simpleName="专业服务（中介/检测/认证/外包）" value="12" />
+        <mappingItem defaultName="快消/耐消" fullName="快消/耐消" simpleName="快消/耐消" value="13" />
+        <mappingItem defaultName="贸易/进出口" fullName="贸易/进出口" simpleName="贸易/进出口" value="14" />
+        <mappingItem defaultName="零售/批发/租赁" fullName="零售/批发/租赁" simpleName="零售/批发/租赁" value="15" />
+        <mappingItem defaultName="教育/培训/院校" fullName="教育/培训/院校" simpleName="教育/培训/院校" value="16" />
+        <mappingItem defaultName="汽车/摩托车" fullName="汽车/摩托车" simpleName="汽车/摩托车" value="17" />
+        <mappingItem defaultName="生产/加工/制造" fullName="生产/加工/制造" simpleName="生产/加工/制造" value="18" />
+        <mappingItem defaultName="医疗/健康" fullName="医疗/健康" simpleName="医疗/健康" value="19" />
+        <mappingItem defaultName="供应链/物流" fullName="供应链/物流" simpleName="供应链/物流" value="20" />
+        <mappingItem defaultName="服务业" fullName="服务业" simpleName="服务业" value="21" />
+        <mappingItem defaultName="旅游/度假" fullName="旅游/度假" simpleName="旅游/度假" value="22" />
+        <mappingItem defaultName="媒体/传媒" fullName="媒体/传媒" simpleName="媒体/传媒" value="23" />
+        <mappingItem defaultName="文化/体育/娱乐" fullName="文化/体育/娱乐" simpleName="文化/体育/娱乐" value="24" />
+        <mappingItem defaultName="能源/矿产/环保" fullName="能源/矿产/环保" simpleName="能源/矿产/环保" value="25" />
+        <mappingItem defaultName="政府/非盈利机构" fullName="政府/非盈利机构" simpleName="政府/非盈利机构" value="26" />
+        <mappingItem defaultName="O2O" fullName="O2O" simpleName="O2O" value="27" />
+        <mappingItem defaultName="其它" fullName="其它" simpleName="其它" value="28" />
+    </element>
+    <!-- 公司性质 -->
+    <element name="charact">
+        <mappingItem defaultName="国企" fullName="国企" simpleName="国企" value="1" />
+        <mappingItem defaultName="民营" fullName="民营" simpleName="民营" value="2" />
+        <mappingItem defaultName="合资" fullName="合资" simpleName="合资" value="3" />
+        <mappingItem defaultName="外资" fullName="外资" simpleName="外资" value="4" />
+        <mappingItem defaultName="股份制企业" fullName="股份制企业" simpleName="股份制企业" value="5" />
+        <mappingItem defaultName="上市公司" fullName="上市公司" simpleName="上市公司" value="6" />
+        <mappingItem defaultName="代表处" fullName="代表处" simpleName="代表处" value="7" />
+        <mappingItem defaultName="政府机关事业单位" fullName="政府机关事业单位" simpleName="政府机关事业单位" value="8" />
+        <mappingItem defaultName="非营利机构" fullName="非营利机构" simpleName="非营利机构" value="9" />
+        <mappingItem defaultName="创业公司" fullName="创业公司" simpleName="创业公司" value="10" />
+        <mappingItem defaultName="其它" fullName="其它" simpleName="其它" value="11" />
+    </element>
+    <!-- 公司规模 -->
+    <element name="scale">
+        <mappingItem defaultName="少于50人" fullName="少于50人" simpleName="少于50人" value="1" />
+        <mappingItem defaultName="50-150人" fullName="50-150人" simpleName="50-150人" value="2" />
+        <mappingItem defaultName="150-500人" fullName="150-500人" simpleName="150-500人" value="3" />
+        <mappingItem defaultName="500-1000人" fullName="500-1000人" simpleName="500-1000人"
+            value="4" />
+        <mappingItem defaultName="1000-10000人" fullName="1000-10000人" simpleName="1000-10000人"
+            value="5" />
+        <mappingItem defaultName="10000人以上" fullName="10000人以上" simpleName="10000人以上" value="6" />
+    </element>
+    <!-- 发展阶段 -->
+    <element name="stage">
+        <mappingItem defaultName="未融资" fullName="未融资" simpleName="未融资" value="1" />
+        <mappingItem defaultName="天使轮" fullName="天使轮" simpleName="天使轮" value="2" />
+        <mappingItem defaultName="A轮" fullName="A轮" simpleName="A轮" value="3" />
+        <mappingItem defaultName="B轮" fullName="B轮" simpleName="B轮" value="4" />
+        <mappingItem defaultName="C轮" fullName="C轮" simpleName="C轮" value="5" />
+        <mappingItem defaultName="D轮及以上" fullName="D轮及以上" simpleName="D轮及以上" value="6" />
+        <mappingItem defaultName="上市公司" fullName="上市公司" simpleName="上市公司" value="7" />
+        <mappingItem defaultName="不需要融资" fullName="不需要融资" simpleName="不需要融资" value="8" />
+    </element>
+    <!-- 公司状态 -->
+    <element name="status">
+        <mappingItem defaultName="全职" fullName="全职" simpleName="全职" value="1" />
+        <mappingItem defaultName="兼职" fullName="兼职" simpleName="兼职" value="2" />
+        <mappingItem defaultName="实习" fullName="实习" simpleName="实习" value="3" />
+    </element>
+</quantize>
