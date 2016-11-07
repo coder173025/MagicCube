@@ -14,4 +14,8 @@
         <attr name="shouldExpand" format="boolean" />
         <attr name="textAllCaps" format="reference|boolean" />
     </declare-styleable>
+    <declare-styleable name="RippleView">
+        <attr name="normal" format="reference" />
+        <attr name="pressed" format="reference" />
+    </declare-styleable>
 </resources>
