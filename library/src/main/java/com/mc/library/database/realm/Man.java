@@ -1,4 +1,4 @@
-package database.library;
+package com.mc.library.database.realm;
 
 import io.realm.RealmList;
 import io.realm.RealmModel;

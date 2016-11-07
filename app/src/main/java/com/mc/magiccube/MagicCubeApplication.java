@@ -4,7 +4,7 @@ import android.app.Application;
 import android.content.ComponentCallbacks;
 import android.content.res.Configuration;
 
-import database.library.DBHelper;
+import com.mc.library.database.realm.DBHelper;
 
 /**
  * Created by Qiu on 2016/10/20.

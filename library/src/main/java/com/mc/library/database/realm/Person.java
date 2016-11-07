@@ -1,4 +1,4 @@
-package database.library;
+package com.mc.library.database.realm;
 
 import io.realm.RealmObject;
 import io.realm.annotations.Index;

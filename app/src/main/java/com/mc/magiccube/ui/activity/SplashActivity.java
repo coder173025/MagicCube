@@ -5,10 +5,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.mc.library.base.BaseActivity;
+import com.mc.library.database.realm.DBHelper;
+import com.mc.library.database.realm.Person;
 import com.mc.magiccube.R;
-
-import database.library.DBHelper;
-import database.library.Person;
 
 /**
  * Created by dinghui on 2016/11/4.

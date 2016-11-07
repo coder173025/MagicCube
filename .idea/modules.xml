@@ -4,9 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MagicCube.iml" filepath="$PROJECT_DIR$/MagicCube.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/database-library/database-library.iml" filepath="$PROJECT_DIR$/database-library/database-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/network-library/network-library.iml" filepath="$PROJECT_DIR$/network-library/network-library.iml" />
     </modules>
   </component>
 </project>
