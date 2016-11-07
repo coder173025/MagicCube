@@ -1,13 +1,11 @@
 *.iml
 .gradle
-.idea
 
 # Local configuration file (sdk path, ndk path, etc)
 /local.properties
 
 /.idea/workspace.xml
 /.idea/libraries
-/.idea
 .DS_Store
 /build
 
