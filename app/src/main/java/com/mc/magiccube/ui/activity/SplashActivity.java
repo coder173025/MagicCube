@@ -1,17 +1,23 @@
 package com.mc.magiccube.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import com.mc.library.base.BaseActivity;
-import com.mc.library.database.realm.DBHelper;
-import com.mc.library.database.realm.Person;
 import com.mc.magiccube.R;
 
 /**
  * Created by dinghui on 2016/11/4.
  * 闪屏Activity
+ */
+/**
+ * author：coder173025
+ * project：MagicCube
+ * package：com.mc.magiccube
+ * email：coder173025@sina.com
+ * data：2016/12/31
  */
 public class SplashActivity extends BaseActivity {
 
@@ -28,10 +34,7 @@ public class SplashActivity extends BaseActivity {
         // Example of a call to a native method
         TextView tv = (TextView) findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());
-        Person person = new Person();
-        person.setId(1);
-        person.setName("hui");
-        DBHelper.createOrUpdate(person);
+        tv.setOnClickListener(this);
     }
 
     /**
@@ -47,6 +50,13 @@ public class SplashActivity extends BaseActivity {
 
     @Override
     public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.sample_text:
+                startActivity(new Intent(this, WelcomeActivity.class));
+                break;
 
+            default:
+                break;
+        }
     }
 }
