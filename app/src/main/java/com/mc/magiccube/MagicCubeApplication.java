@@ -1,15 +1,13 @@
 package com.mc.magiccube;
 
-import android.app.Application;
 import android.content.ComponentCallbacks;
 import android.content.res.Configuration;
-
-import com.mc.library.database.realm.DBHelper;
+import android.support.multidex.MultiDexApplication;
 
 /**
  * Created by Qiu on 2016/10/20.
  */
-public class MagicCubeApplication extends Application {
+public class MagicCubeApplication extends MultiDexApplication {
     public MagicCubeApplication() {
         super();
     }
@@ -21,7 +19,7 @@ public class MagicCubeApplication extends Application {
         /**
          * 初始化数据库
          */
-        DBHelper.init(this);
+//        DBHelper.init(this);
     }
 
     @Override

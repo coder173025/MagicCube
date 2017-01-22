@@ -2,6 +2,113 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mc.magiccube">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="getui.permission.GetuiService.com.mf.mfhr" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <activity
+        android:name="com.tencent.android.tpush.XGPushActivity"
+        android:exported="false"
+        android:theme="@android:style/Theme.Translucent">
+        <intent-filter>
+            <action android:name="android.intent.action" />
+        </intent-filter>
+    </activity>
+
+    <receiver
+        android:name="com.tencent.android.tpush.XGPushReceiver"
+        android:process=":xg_service_v2">
+        <intent-filter android:priority="0x7fffffff">
+            <action android:name="com.tencent.android.tpush.action.SDK" />
+            <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            <action android:name="android.intent.action.USER_PRESENT" />
+            <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+            <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+        </intent-filter>
+        <intent-filter android:priority="0x7fffffff">
+            <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+            <action android:name="android.intent.action.MEDIA_REMOVED" />
+            <action android:name="android.intent.action.MEDIA_CHECKING" />
+            <action android:name="android.intent.action.MEDIA_EJECT" />
+
+            <data android:scheme="file" />
+        </intent-filter>
+    </receiver>
+
+    <service
+        android:name="com.tencent.android.tpush.service.XGPushService"
+        android:exported="true"
+        android:persistent="true"
+        android:process=":xg_service_v2" />
+
+    <service
+        android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="com.mc.magiccube.PUSH_ACTION" />
+        </intent-filter>
+    </service>
+    <!--<service-->
+        <!--android:name="com.tencent.android.tpush.XGDownloadService"-->
+        <!--android:enabled="true"-->
+        <!--android:exported="false" />-->
+    <receiver
+        android:name="com.qq.xgdemo.receiver.MessageReceiver"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+            <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+        </intent-filter>
+    </receiver>
+
+    <meta-data
+        android:name="XG_V2_ACCESS_ID"
+        android:value="2100244828" />
+    <meta-data
+        android:name="XG_V2_ACCESS_KEY"
+        android:value="A18MEU43Y4SE" />
+    <!--a126ec554bc015f564c63049963163b4-->
+    <meta-data
+        android:name="com.tencent.rdm.uuid"
+        android:value="0a9aa75a-e184-4958-86ab-49f55e11e619" />
+
     <application
         android:name=".MagicCubeApplication"
         android:allowBackup="true"
