@@ -52,7 +52,7 @@ public class SplashActivity extends BaseActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.sample_text:
-                startActivity(new Intent(this, WelcomeActivity.class));
+                startActivity(new Intent(this, CanvasActivity.class));
                 break;
 
             default:
